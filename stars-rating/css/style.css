@@ -1,0 +1,22 @@
+.stars {
+    display: block;
+    width: 600px;
+    margin: 0 auto;
+    transform: rotate(180deg);
+    font-size: 0;
+}
+
+.stars__span {
+    display: inline-block;
+    opacity: .1;
+    transform: rotate(35deg);
+    transition: opacity .2s ease-in-out;
+}
+
+.stars__span:hover {
+    opacity: 1;
+}
+
+.stars__span:hover ~ .stars__span {
+    opacity: 1;
+}
